@@ -1,12 +1,39 @@
-= O tym repozytorium
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+= SpringJavaConfig
 
-Zebrane warsztaty ze Szpringa. Poproszę o DOSKONALE opisane i dobrej jakości gałązki. Dodajemy przez PRki, bym mógł zrecenzować. Znaczy, że:
+Podczas pracy z tym repozytorium poruszysz tematy:
 
-1. Klikacie `fork`
-2. Tam, w Waszej kopii, wrzucacie zmiany jako odpowiednią gałązkę. Lub gałązki. Kim jestem by odmawiać gałązek.
-3. Robicie Prośbę o Reckę, ja robię reckę.
-4. Cykl z 3 się powtarza aż przejdziecie reckę... wtedy dodaję Was tu jako kontrybutora i wrzucacie kod wprost do tego repozytu i robicie recki razem ze mną. :-)
+- Podstawy konfiguracji programistycznej - Witaj Świecie!
+- Łączenie konfiguracji - `@Configuration` i `@Import`
+- Dostęp do ziaren na różne sposoby (per nazwa, per klasa itd.)
+- Zakres ziaren
+- Tworzenie specjalistycznych ziaren - `@Controller`, `@Service` i `@Repository`
 
-== Adoc?
+### Jak pracować z tym repozytorium?
+Poszczególne pakiety w repozytorium obrazują pewien wycinek wiedzy z wspomnianej wyżej tematyki.
 
-By poznać nieco AsciiDoctor w którym mają być readme, zerknij tu: https://github.com/LIttleAncientForestKami/pokaz-adoca
+Kolejne pakiety pokazują coraz to większy zakres materiałów, począwszy od
+prostej aplikacji Witaj Świecie, skończywszy na aplikacji webowej działającej
+z wykorzystaniem kontenera serwletów Tomcat.
+
+Pakiety w tej aplikacji należy przechodzić po koleii (w porządku alfabetycznym).
+Każdy z kluczowych pakietów jest udokumentowany. Jeśli w którymś z pakietów nie znalazłeś/łaś
+dokumentacji, poszukaj opisu w pakiecie wyżej.
+
+Kroki które powinieneś wykonać (zadania koderskie jak i odnośniki do dokumentacji)
+znajdziesz w dokumentacjach pakietów (patrz pliki package-info.java).
+
+#### Co gdy już wszystko przerobiłem?
+Na sam koniec zostaje zadanko koderskie. W katalogu resources znajdziesz
+gotowy diagram klas. Zaimplementuj aplikację w zgodzie z tym diagramem.
+
+NOTE: Jeśli zdecydujesz się na implementowanie tego zadania w tym repozytorium (co jest zalecane),
+to pamiętaj o tym, że w tym projekcie jest już jeden działający kontroler. Tworzenie
+nowego może wymagać modyfikacji już istniejącego kontrolera, z powodów do których
+(mam nadzieję) dojdziesz na własną rękę.
